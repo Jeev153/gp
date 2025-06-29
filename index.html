@@ -1,0 +1,154 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Government Polytechnic Nashik Login
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-white">
+  <!-- Header -->
+  <header class="flex items-center bg-[#1d8db0] p-4 gap-4" style="background-image:linear-gradient(124deg, rgb(247 249 255) -7.2%, #017fa8 100.2%);">
+   <img alt="Government Polytechnic Nashik official logo with Marathi text and emblem" class="w-20 h-20 object-contain" height="80" src="./img/gpnashik_logo.png" width="80"/>
+   <div>
+    <h1 class="font-extrabold text-black text-xl md:text-2xl">
+     Government Polytechnic, Nashik
+    </h1>
+    <h2 class="font-extrabold text-black text-lg md:text-xl leading-tight">
+     (शासकीय तंत्रनिकेतन, नाशिक)
+    </h2>
+    <p class="font-extrabold text-black text-base md:text-lg">
+     Online Academic Management System
+    </p>
+   </div>
+  </header>
+  <!-- Empty white bar below header -->
+  <div class="h-8 bg-white border-b border-gray-200">
+  </div>
+  <!-- Navigation bar -->
+  <nav class="bg-[#0d7ba3] px-4 py-2">
+   <ul class="flex gap-6 text-white font-semibold text-sm md:text-base">
+    <li>
+     <a class="hover:underline" href="#">
+      Home
+     </a>
+    </li>
+    <li>
+     <a class="hover:underline" href="#">
+      Contact
+     </a>
+    </li>
+    <li>
+     <a class="hover:underline" href="#">
+      Log In
+     </a>
+    </li>
+   </ul>
+  </nav>
+  <!-- Main content area -->
+  <main class="flex flex-col md:flex-row max-w-7xl mx-auto mt-6 px-4 md:px-0 gap-6">
+   <!-- Left menu -->
+   <aside class="w-full md:w-64 bg-[#fff0f0] rounded-md shadow-sm">
+    <div class="bg-[#0d7ba3] rounded-t-md px-4 py-3 font-bold text-white text-sm md:text-base">
+     MAIN MENU
+    </div>
+    <ul class="flex flex-col">
+     <li>
+      <a class="block px-4 py-2 font-semibold text-[#0d4f6a] hover:underline" href="#">
+       About Us
+      </a>
+     </li>
+     <li>
+      <a class="block px-4 py-2 font-semibold text-[#0d4f6a] hover:underline" href="#">
+       Official Website
+      </a>
+     </li>
+    </ul>
+   </aside>
+   <!-- Login form -->
+   <section class="w-full md:w-96 bg-white rounded-md shadow-md border border-gray-200">
+    <div class="bg-[#0d7ba3] rounded-t-md px-4 py-3 font-bold text-white text-center text-sm md:text-base">
+     LOGIN
+    </div>
+    <form action="#" autocomplete="off" class="p-6 space-y-4" method="POST">
+     <div>
+      <label class="block mb-1 text-sm text-gray-700" for="username">
+       User Name
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-3 py-2 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0d7ba3]" id="username" name="username" placeholder="Enter Username" type="text"/>
+     </div>
+     <div>
+      <label class="block mb-1 text-sm text-gray-700" for="password">
+       Password
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-3 py-2 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0d7ba3]" id="password" name="password" placeholder="Enter Password" type="password"/>
+     </div>
+     <div>
+      <label class="block mb-1 text-sm text-gray-700" for="captcha">
+       Enter Captcha
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-3 py-2 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0d7ba3]" id="captcha" name="captcha" placeholder="Enter Captcha [ 7 + 7 = ?]" type="text"/>
+     </div>
+     <div class="text-center">
+      <button class="bg-[#0d7ba3] text-white px-5 py-2 rounded-md hover:bg-[#0a5a74] transition" type="submit">
+       Login
+      </button>
+     </div>
+     <div class="text-center">
+      <a class="text-xs font-bold text-blue-700 hover:underline" href="#">
+       Forgot password
+      </a>
+     </div>
+    </form>
+   </section>
+   <!-- Login instructions -->
+   <section class="flex-1 bg-white rounded-md border border-gray-300 shadow-sm">
+    <div class="bg-[#0d7ba3] rounded-t-md px-4 py-2 text-white text-sm md:text-base">
+     Login Page Instructions
+    </div>
+    <div class="p-4 text-sm md:text-base font-semibold text-gray-900 leading-relaxed">
+     <ul class="list-disc pl-5">
+      <li>
+       The portal is more efficient &amp; versatile with latest versions of
+            Mozilla Firefox, Google Chrome &amp; Internet explorer 8 &amp; above.So
+            if you have any problems with Internet Explorer lower versions , Please
+            use Mozilla Firefox or Google Chrome or Internet Explorer 8
+      </li>
+     </ul>
+    </div>
+   </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-[#0d7ba3] text-white text-center py-2 mt-10 text-sm md:text-base">
+   Copyright © 2023-24. All rights reserved.
+  </footer>
+ </body>
+ <script>
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent default form submission
+    
+        const username = document.getElementById("username").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const captcha = document.getElementById("captcha").value.trim();
+    
+        // Validate captcha
+        if (captcha !== "14") {
+          alert("Incorrect captcha. Please try again.");
+          return;
+        }
+    
+        // Check credentials
+        if (username === "24041052" && password === "rasika8698") {
+          window.location.href = "img/login.html";
+        } else if (username === "24051051" && password === "Rasika21") {
+          window.location.href = "login.html";
+        } else {
+          alert("Invalid username or password.");
+        }
+      });
+    </script>
+    
+</html>
